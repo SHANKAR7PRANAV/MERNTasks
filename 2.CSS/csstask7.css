@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(162,43 ,85);
+}
+
+table{
+    font-size: x-large;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    padding: 2rem 4rem;
+    padding-bottom: 0rem;
+    color: white;
+    border-spacing: 1rem;
+    background-color: rgb(117, 32, 63);
+}
+
+
+button{
+    width: 100%;
+    font-size: x-large;
+}
+select{
+    font-size: medium;
+}
+
+textarea{
+    height: 2.6rem;
+}

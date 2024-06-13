@@ -1,0 +1,11 @@
+table,tr,th,td{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td,th{
+    width: 20rem;
+    background-color: rgb(139, 224, 230);
+}

@@ -1,0 +1,57 @@
+.main{
+   display: flex; 
+}
+
+.side{
+    width: 20%;
+    margin-right: 20px;
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+#item{
+    display:flex;
+    justify-content: space-between;
+    height: 3rem;
+    background-color: azure;
+    margin-bottom: 1rem;   
+}
+
+a:hover{
+    color: maroon;
+}
+
+a:visited{
+    color: brown;
+}
+
+body{
+    background-color: rgb(233, 233, 144);
+    color: maroon;
+}
+
+a{
+    padding-top: 15px;
+    padding-left: 10px;
+    text-decoration: none;
+    
+}
+
+#inner{
+    width: 15%; 
+    background-color: black;
+}
+
+p{
+    font-size: x-large;
+}
+
+#h1{
+    font-size: xxx-large;
+}
+
+hr{
+    border: 1px dashed maroon;
+}
+
+

@@ -1,0 +1,49 @@
+.main{
+    display: flex;
+    margin-left: -8px;
+    width: 100%;
+
+}
+
+.side{
+    background-color: white;
+    margin-top: 1rem;
+    margin-right: 10%;
+    width: 7%;
+    height: 30rem
+}
+
+#green,#red,#blue,#grey{
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+#green{
+    background-color: green;
+}
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#grey{
+    background-color: gray;
+}
+#grey:hover{
+   width: 200%;
+}
+
+#green:hover{
+    width: 200%;
+}
+
+ #blue:hover{
+    width: 200%;
+}
+
+#red:hover{
+    width: 200%;
+}

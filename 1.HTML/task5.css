@@ -1,0 +1,38 @@
+table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+input{
+    width: 30rem;
+}
+
+select{
+    width: 10rem;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label{
+    font-weight: bold;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
+textarea{
+    width: 98.5%;
+    height: 5rem;
+}
+
+button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

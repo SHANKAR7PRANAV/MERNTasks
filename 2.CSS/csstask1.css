@@ -1,0 +1,25 @@
+#table1,.table1cell,th,.table1row{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.60rem;
+    background-color: rgb(139, 224, 230);
+}
+
+.table1cell,th{
+    width: 20rem;
+}
+#table1,th,.table1cell{
+    border: 1px solid black;
+}
+
+#table2{
+margin-left: auto;
+margin-right: auto;
+margin-top: 2rem;
+border-spacing: 2rem;
+}
+.table2cell{
+    border: 3px solid rgba(110, 205, 14, 0.74);
+    height: 5rem;
+    width: 5rem;
+}
