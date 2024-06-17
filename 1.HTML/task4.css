@@ -1,10 +1,7 @@
-
-td{
-    border-bottom: 0.5rem solid white;
-}
 table{
     margin-left: auto;
     margin-right: auto;
+    border-spacing: 0.5rem;
 }
 input{
     margin-left: 10rem;
@@ -18,3 +15,4 @@ select{
 #password,#re-password{
     width: 9rem;
 }
+
