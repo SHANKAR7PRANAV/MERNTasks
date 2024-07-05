@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter the string: <input type="text" id="example"><br>
+    Sorted String   : <span id="sorted"></span><br>
+    <button type="submit" onclick="sortString()">Sort</button>
+    
+    <script>    
+    function sortString() {
+        let str= document.getElementById("example").value;
+        let charArray = str.split('');
+        charArray.sort();
+        let sortedStr = charArray.join('');
+        document.getElementById("sorted").innerText=sortedStr;
+    }
+    </script>
+
+</body>
+</html>

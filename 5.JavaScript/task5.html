@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        div {
+            margin-bottom: 1rem;
+        }
+        .error {
+            color: red;
+            margin-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form id="contactForm">
+        <table style="border-spacing: 1rem;">
+        <tr>
+            <td style="text-align: end;"><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name"></td>
+            <td><span class="error" id="nameError"></span></td>
+        </tr>
+        <tr>
+            <td style="text-align: end;"><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"></td>
+            <td><span class="error" id="emailError"></span></td>
+        </tr>
+        <tr>
+            <td style="text-align: end;"><label for="webpage">Webpage:</label></td>
+            <td><input type="url" id="webpage" name="webpage"></td>
+            <td><span class="error" id="webpageError"></span></td>
+        </tr>
+        <tr>
+            <td style="text-align: end;"><label for="message">Message:</label></td>
+            <td><textarea id="message" name="message"></textarea></td>
+            <td><span class="error" id="messageError"></span></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center\;"><button type="button" onclick="validateForm()">Submit</button></td>
+        </tr>
+    </table>
+    </form>
+
+    <script>
+        function validateForm() {
+            document.getElementById("nameError").innerText = "";
+            document.getElementById("emailError").innerText = "";
+            document.getElementById("webpageError").innerText = "";
+            document.getElementById("messageError").innerText = "";
+
+            // Get the form fields
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let webpage = document.getElementById("webpage").value;
+            let message = document.getElementById("message").value;
+
+            // Initialize a flag to track validation
+            let isValid = true;
+
+            // Check if any field is empty and display an error message if so
+            if (name === "") {
+                document.getElementById("nameError").innerText = "Name is required.";
+                isValid = false;
+            }
+            if (email === "") {
+                document.getElementById("emailError").innerText = "Email is required.";
+                isValid = false;
+            }
+            if (webpage === "") {
+                document.getElementById("webpageError").innerText = "Webpage is required.";
+                isValid = false;
+            }
+            if (message === "") {
+                document.getElementById("messageError").innerText = "Message is required.";
+                isValid = false;
+            }
+            if (isValid) {
+                alert("Form submitted successfully!");
+
+                document.getElementById("contactForm").reset();
+            }
+        }
+    </script>
+</body>
+</html>

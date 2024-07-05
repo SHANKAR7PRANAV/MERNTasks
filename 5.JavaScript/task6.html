@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Instagram</title>
+    <link rel="stylesheet" href="task6css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram</h1>
+        <form id="loginForm">
+            <div class="input-container">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            
+            <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <div class="remember-me-container">
+                <label for="rememberMe">
+                    <input type="checkbox" id="rememberMe" name="rememberMe"> Remember Me
+                </label>
+               <small><a href="forgotpassword.html" id="forgotPassword">Forgot Password?</a></small> 
+            </div>
+        </form>
+        <p>Don't have an account? <a href="signup.html" id="signupLink">Sign up</a></p>
+    </div>
+</body>
+</html>

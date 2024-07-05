@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="submit" onclick="showDate()">Show Date</button>
+    <div id="date"></div>
+    <br>
+    <button type="submit" onclick="showTime()">Show Time</button>
+    <div id="time"></div>
+    <script>
+        var today=new Date();
+        mlist = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+        function showDate(){
+            document.getElementById("date").innerText=today.getDate()+"/"+mlist[today.getMonth()] +"/"+today.getFullYear();
+        }
+        function showTime(){
+            document.getElementById("time").innerText=today;
+        }
+    </script>
+</body>
+</html>

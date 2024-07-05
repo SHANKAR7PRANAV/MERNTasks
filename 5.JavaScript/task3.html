@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="firstnumber">1st Number :</label>
+        <input type="text" id="firstnumber" name="firstnumber">
+    </div>
+    <div>
+        <label for="secondnumber">2nd Number:</label>
+        <input type="text" id="secondnumber" name="secondnumber">
+    </div>
+    <div>
+        <button type="submit" onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        function multiply() {
+            let x = parseInt(document.getElementById("firstnumber").value);
+            let y = parseInt(document.getElementById("secondnumber").value);
+            let result = x * y;
+            document.getElementById("result").innerText = "The Result is: "+result;
+        }
+
+        function divide() {
+            let x = parseInt(document.getElementById("firstnumber").value);
+            let y = parseInt(document.getElementById("secondnumber").value);
+            if (y !== 0) {
+                let result = x / y;
+                document.getElementById("result").innerText ="The Result is: "+ result;
+            } else {
+                document.getElementById("result").innerText = "Cannot divide by zero";
+            }
+        }
+    </script>
+</body>
+</html>
